@@ -17,8 +17,8 @@ public class RandomMaze {
         height = h;
         width = w;
         rand = new Random();
-        world = new TETile[height][width];
-        map = new int[height][width];
+        world = new TETile[width][height];
+        map = new int[width][height];
         map[0][0] = 1;
         randomGenerate(0, 0);
         render();
@@ -41,25 +41,23 @@ public class RandomMaze {
     }
 
     private void randomGenerate(int i, int j) {
-        if (RandomUtils.uniform(new Random(),5) != 0 && goUp(i, j)) {
-            randomGenerate(i - 2, j);
+        if (RandomUtils.uniform(new Random(), 5) != 0 && goUp(i, j)) {
+            randomGenerate(i, j + 2);
         }
-        if (RandomUtils.uniform(new Random(),5) != 0 && goDown(i, j)) {
-            randomGenerate(i + 2, j);
-        }
-
-        if (RandomUtils.uniform(new Random(),5) != 0 && goLeft(i, j)) {
+        if (RandomUtils.uniform(new Random(), 5) != 0 && goDown(i, j)) {
             randomGenerate(i, j - 2);
         }
 
-        if (RandomUtils.uniform(new Random(),5) != 0 && goRight(i, j)) {
-            randomGenerate(i, j + 2);
+        if (RandomUtils.uniform(new Random(), 5) != 0 && goLeft(i, j)) {
+            randomGenerate(i - 2, j);
         }
 
-
+        if (RandomUtils.uniform(new Random(), 5) != 0 && goRight(i, j)) {
+            randomGenerate(i + 2, j);
+        }
     }
 
-    private boolean goUp(int i, int j) {
+    private boolean goLeft(int i, int j) {
         if (i > 1 && map[i - 1][j] == 0 && map[i - 2][j] == 0) {
             map[i - 1][j] = 1;
             map[i - 2][j] = 1;
@@ -68,8 +66,8 @@ public class RandomMaze {
         return false;
     }
 
-    private boolean goDown(int i, int j) {
-        if (i < height - 2 && map[i + 1][j] == 0 && map[i + 2][j] == 0) {
+    private boolean goRight(int i, int j) {
+        if (i < width - 2 && map[i + 1][j] == 0 && map[i + 2][j] == 0) {
             map[i + 1][j] = 1;
             map[i + 2][j] = 1;
             return true;
@@ -77,7 +75,7 @@ public class RandomMaze {
         return false;
     }
 
-    private boolean goLeft(int i, int j) {
+    private boolean goDown(int i, int j) {
         if (j > 1 && map[i][j - 1] == 0 && map[i][j - 2] == 0) {
             map[i][j - 1] = 1;
             map[i][j - 2] = 1;
@@ -86,8 +84,8 @@ public class RandomMaze {
         return false;
     }
 
-    private boolean goRight(int i, int j) {
-        if (j < width - 2 && map[i][j + 1] == 0 && map[i][j + 2] == 0) {
+    private boolean goUp(int i, int j) {
+        if (j < height - 2 && map[i][j + 1] == 0 && map[i][j + 2] == 0) {
             map[i][j + 1] = 1;
             map[i][j + 2] = 1;
             return true;
