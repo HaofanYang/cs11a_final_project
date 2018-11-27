@@ -6,19 +6,21 @@ import lib.TileEngine.Tileset;
 import java.util.Random;
 
 public class RandomMaze {
-    private final int height = 41;
-    private final int width = 51;
+    private final int height;
+    private final int width;
     private TETile[][] world;
     int[][] map; // int representation of a map: 0 for wall and 1 for path
     Random rand;
 
     // Given a current level, initiate a random maze
-    public RandomMaze() {
+    public RandomMaze(int w, int h) {
+        height = h;
+        width = w;
         rand = new Random();
         world = new TETile[height][width];
         map = new int[height][width];
-        map[20][25] = 1;
-        randomGenerate(20, 25);
+        map[0][0] = 1;
+        randomGenerate(0, 0);
         render();
     }
 
@@ -39,18 +41,18 @@ public class RandomMaze {
     }
 
     private void randomGenerate(int i, int j) {
-        if (RandomUtils.uniform(new Random(),4) != 0 && goUp(i, j)) {
+        if (RandomUtils.uniform(new Random(),5) != 0 && goUp(i, j)) {
             randomGenerate(i - 2, j);
         }
-        if (RandomUtils.uniform(new Random(),4) != 0 && goDown(i, j)) {
+        if (RandomUtils.uniform(new Random(),5) != 0 && goDown(i, j)) {
             randomGenerate(i + 2, j);
         }
 
-        if (RandomUtils.uniform(new Random(),4) != 0 && goLeft(i, j)) {
+        if (RandomUtils.uniform(new Random(),5) != 0 && goLeft(i, j)) {
             randomGenerate(i, j - 2);
         }
 
-        if (RandomUtils.uniform(new Random(),4) != 0 && goRight(i, j)) {
+        if (RandomUtils.uniform(new Random(),5) != 0 && goRight(i, j)) {
             randomGenerate(i, j + 2);
         }
 
