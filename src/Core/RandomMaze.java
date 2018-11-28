@@ -43,6 +43,10 @@ public class RandomMaze {
     public TETile[][] getTile() {
         return graphicMap;
     }
+
+    public int[][] getMap() {
+        return map;
+    }
     
     public int[] getExit() {
         return EXIT;
@@ -51,6 +55,11 @@ public class RandomMaze {
     public int[] getPOSITION() {
         return POSITION;
     }
+
+
+
+    /***
+     * This Block was no longer used
 
     public void moveUp() {
         int x = POSITION[0];
@@ -111,6 +120,7 @@ public class RandomMaze {
             POSITION[0] = x + 1;
         }
     }
+     **/
 
 
 
