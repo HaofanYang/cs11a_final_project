@@ -1,12 +1,12 @@
 package Core;
 
 import lib.StdDraw;
-
+import java.util.Random;
 import java.awt.*;
 
 public class Main {
-    private static final int width = 90;
-    private static final int height = 40;
+    private static final int width = 40;
+    private static final int height = 18;
     public static void main(String[] args) {
         showMenu();
     }
@@ -65,15 +65,37 @@ public class Main {
         return Long.parseLong(seed.toString());
     }
 
-    //TODO
     private static void startNewGame() {
         long seed = promptSeed();
-        Game game = new Game(width, height, seed);
-        game.play();
+        Random rand = new Random(seed);
+        Load newLoad = new Load(rand, width, height);
+        while (!newLoad.hasFinished()) {
+            newLoad.play();
+        }
+        victory();
     }
 
     //TODO
     private static void loadGame() {
         return;
+    }
+
+    private static void victory() {
+        StdDraw.clear(Color.BLACK);
+        StdDraw.enableDoubleBuffering();
+        StdDraw.setYscale(0, height);
+        StdDraw.setXscale(0, width);
+        StdDraw.setFont(new Font("Arial", Font.BOLD, 60));
+        StdDraw.setPenColor(Color.WHITE);
+        StdDraw.text( width / 2, height / 2, "Victory!!!");
+        clearLoad();
+        StdDraw.show();
+        StdDraw.pause(1000);
+        showMenu();
+    }
+
+    // TODO
+    private static void clearLoad() {
+
     }
 }

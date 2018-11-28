@@ -22,20 +22,20 @@ public class RandomMaze {
         this.height = h;
         this.width = w;
         this.rand = rand;
-        this.graphicMap = new TETile[width][height];
-        this.map = new int[width][height];
 
-        // This loop is to prevent the situation where the maze is never initialized (very low probabilty)
-        while (walkables.size() <= 1) {
+        // This loop is to prevent the situation where the maze is too small
+        while (walkables.size() <= height * width / 4) {
+            this.graphicMap = new TETile[width][height];
+            this.map = new int[width][height];
             this.walkables = new ArrayList<>();
 
             map[0][0] = 1; // Traversing from node (0,0)
             walkables.add(new int[]{0, 0});
             randomGenerate(0, 0);
-            setExit();
-            setEntrance();
-            render();
         }
+        setExit();
+        setEntrance();
+        render();
 
     }
 
@@ -58,74 +58,6 @@ public class RandomMaze {
 
 
 
-    /***
-     * This Block was no longer used
-
-    public void moveUp() {
-        int x = POSITION[0];
-        int y = POSITION[1];
-        if (y == height - 1 || map[x][y + 1] == 0) {
-            System.out.println("blocked");
-            return;
-        } else {
-            map[x][y] = 1;
-            map[x][y + 1] = 3;
-            graphicMap[x][y] = Tileset.PATH;
-            graphicMap[x][y + 1] = Tileset.POS;
-            POSITION[1] = y + 1;
-        }
-    }
-
-    public void moveDown() {
-        int x = POSITION[0];
-        int y = POSITION[1];
-        if (y == 0 || map[x][y - 1] == 0) {
-            System.out.println("blocked");
-            return;
-        } else {
-            map[x][y] = 1;
-            map[x][y - 1] = 3;
-            graphicMap[x][y] = Tileset.PATH;
-            graphicMap[x][y - 1] = Tileset.POS;
-            POSITION[1] = y - 1;
-        }
-    }
-
-    public void moveLeft() {
-        int x = POSITION[0];
-        int y = POSITION[1];
-        if (x == 0 || map[x - 1][y] == 0) {
-            System.out.println("blocked");
-            return;
-        } else {
-            map[x][y] = 1;
-            map[x - 1][y] = 3;
-            graphicMap[x][y] = Tileset.PATH;
-            graphicMap[x - 1][y] = Tileset.POS;
-            POSITION[0] = x - 1;
-        }
-    }
-
-    public void moveRight() {
-        int x = POSITION[0];
-        int y = POSITION[1];
-        if (x == width - 1 || map[x + 1][y] == 0) {
-            System.out.println("blocked");
-            return;
-        } else {
-            map[x][y] = 1;
-            map[x + 1][y] = 3;
-            graphicMap[x][y] = Tileset.PATH;
-            graphicMap[x + 1][y] = Tileset.POS;
-            POSITION[0] = x + 1;
-        }
-    }
-     **/
-
-
-
-
-
 
     /**  ===================== Private method below =================== */
 
@@ -139,8 +71,17 @@ public class RandomMaze {
 
     // Randomly select a postion from this.walkable as the initial position
     private void setEntrance() {
+        // To prevent the situation where the entrance and the exit are too close
         int pos = RandomUtils.uniform(this.rand, walkables.size());
-        POSITION = walkables.remove(pos);
+        int[] temp = walkables.get(pos);
+        int xDis = Math.abs(temp[0] - EXIT[0]);
+        int yDis = Math.abs(temp[1] - EXIT[1]);
+        if (xDis < width / 4 || yDis < height / 4) {
+            setEntrance();
+            return;
+        }
+        POSITION = temp;
+        walkables.remove(pos);
     }
 
     // Construct the 2D TETile matrix according to this.map

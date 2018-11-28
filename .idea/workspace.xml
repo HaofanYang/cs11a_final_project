@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5d2a308f-1577-45f6-928d-d06f15a6e506" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Core/Load.java" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/out/production/final_proj/Core/Main.class" afterPath="$PROJECT_DIR$/out/production/final_proj/Core/Main.class" />
       <change beforePath="$PROJECT_DIR$/src/Core/Game.java" afterPath="$PROJECT_DIR$/src/Core/Game.java" />
       <change beforePath="$PROJECT_DIR$/src/Core/Main.java" afterPath="$PROJECT_DIR$/src/Core/Main.java" />
       <change beforePath="$PROJECT_DIR$/src/Core/RandomMaze.java" afterPath="$PROJECT_DIR$/src/Core/RandomMaze.java" />
-      <change beforePath="$PROJECT_DIR$/src/lib/TileEngine/Tileset.java" afterPath="$PROJECT_DIR$/src/lib/TileEngine/Tileset.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,129 +18,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="final_proj.iml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/final_proj.iml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="10" column="9" lean-forward="false" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Game.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Core/Game.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="568">
-              <caret line="120" column="24" lean-forward="true" selection-start-line="120" selection-start-column="24" selection-end-line="120" selection-end-column="24" />
-              <folding>
-                <element signature="method#Game#0;class#Game#0" expanded="false" />
-                <element signature="method#play#0;class#Game#0" expanded="false" />
-                <element signature="method#moveUp#0;class#Game#0" expanded="false" />
-                <element signature="method#moveDown#0;class#Game#0" expanded="false" />
-                <element signature="method#moveLeft#0;class#Game#0" expanded="false" />
-                <element signature="method#moveRight#0;class#Game#0" expanded="false" />
-                <element signature="method#canMoveUp#0;class#Game#0" expanded="false" />
-                <element signature="method#canMoveDown#0;class#Game#0" expanded="false" />
-                <element signature="method#canMoveLeft#0;class#Game#0" expanded="false" />
-                <element signature="method#canMoveRight#0;class#Game#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Core/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="7" column="39" lean-forward="false" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
-              <folding>
-                <element signature="method#loadGame#0;class#Main#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TERenderer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/lib/TileEngine/TERenderer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-529">
-              <caret line="27" column="46" lean-forward="true" selection-start-line="27" selection-start-column="46" selection-end-line="27" selection-end-column="46" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Tileset.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/lib/TileEngine/Tileset.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="23" column="21" lean-forward="true" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StdDraw.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/lib/StdDraw.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="10538">
-              <caret line="479" column="19" lean-forward="false" selection-start-line="479" selection-start-column="19" selection-end-line="479" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RandomMaze.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Core/RandomMaze.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="185">
-              <caret line="140" column="31" lean-forward="false" selection-start-line="140" selection-start-column="31" selection-end-line="140" selection-end-column="31" />
-              <folding>
-                <element signature="method#RandomMaze#0;class#RandomMaze#0" expanded="false" />
-                <element signature="method#getTile#0;class#RandomMaze#0" expanded="false" />
-                <element signature="method#getMap#0;class#RandomMaze#0" expanded="false" />
-                <element signature="method#getExit#0;class#RandomMaze#0" expanded="false" />
-                <element signature="method#getPOSITION#0;class#RandomMaze#0" expanded="false" />
-                <element signature="method#setExit#0;class#RandomMaze#0" expanded="false" />
-                <element signature="method#setEntrance#0;class#RandomMaze#0" expanded="false" />
-                <element signature="method#render#0;class#RandomMaze#0" expanded="false" />
-                <element signature="method#randomGenerate#0;class#RandomMaze#0" expanded="false" />
-                <element signature="method#goLeft#0;class#RandomMaze#0" expanded="false" />
-                <element signature="method#goRight#0;class#RandomMaze#0" expanded="false" />
-                <element signature="method#goDown#0;class#RandomMaze#0" expanded="false" />
-                <element signature="method#goUp#0;class#RandomMaze#0" expanded="false" />
-                <marker date="1543387792977" expanded="false" signature="1626:2018" ph="{...}" />
-                <marker date="1543387792977" expanded="false" signature="2047:2430" ph="{...}" />
-                <marker date="1543387792977" expanded="false" signature="2459:2842" ph="{...}" />
-                <marker date="1543387792977" expanded="false" signature="2872:3263" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RandomUtils.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/lib/RandomUtils.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="792">
-              <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TETile.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/lib/TileEngine/TETile.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-67">
-              <caret line="23" column="13" lean-forward="false" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -175,10 +55,11 @@
       <list>
         <option value="$PROJECT_DIR$/src/Game.java" />
         <option value="$PROJECT_DIR$/src/lib/StdDraw.java" />
-        <option value="$PROJECT_DIR$/src/Core/RandomMaze.java" />
+        <option value="$PROJECT_DIR$/src/lib/TileEngine/Tileset.java" />
         <option value="$PROJECT_DIR$/src/Core/Main.java" />
         <option value="$PROJECT_DIR$/src/Core/Game.java" />
-        <option value="$PROJECT_DIR$/src/lib/TileEngine/Tileset.java" />
+        <option value="$PROJECT_DIR$/src/Core/RandomMaze.java" />
+        <option value="$PROJECT_DIR$/src/Core/Load.java" />
       </list>
     </option>
   </component>
@@ -449,12 +330,12 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Core/RandomMaze.java</url>
-          <line>163</line>
+          <line>104</line>
           <properties />
           <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="12" />
+      <option name="time" value="13" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -502,17 +383,12 @@
             <element signature="method#getExit#0;class#RandomMaze#0" expanded="false" />
             <element signature="method#getPOSITION#0;class#RandomMaze#0" expanded="false" />
             <element signature="method#setExit#0;class#RandomMaze#0" expanded="false" />
-            <element signature="method#setEntrance#0;class#RandomMaze#0" expanded="false" />
             <element signature="method#render#0;class#RandomMaze#0" expanded="false" />
             <element signature="method#randomGenerate#0;class#RandomMaze#0" expanded="false" />
             <element signature="method#goLeft#0;class#RandomMaze#0" expanded="false" />
             <element signature="method#goRight#0;class#RandomMaze#0" expanded="false" />
             <element signature="method#goDown#0;class#RandomMaze#0" expanded="false" />
             <element signature="method#goUp#0;class#RandomMaze#0" expanded="false" />
-            <marker date="1543387792977" expanded="false" signature="1626:2018" ph="{...}" />
-            <marker date="1543387792977" expanded="false" signature="2047:2430" ph="{...}" />
-            <marker date="1543387792977" expanded="false" signature="2459:2842" ph="{...}" />
-            <marker date="1543387792977" expanded="false" signature="2872:3263" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -540,6 +416,9 @@
           <folding>
             <element signature="method#Game#0;class#Game#0" expanded="false" />
             <element signature="method#play#0;class#Game#0" expanded="false" />
+            <element signature="method#findPath#0;class#Game#0" expanded="false" />
+            <element signature="method#DFS#0;class#Game#0" expanded="false" />
+            <element signature="method#moveBack#0;class#Game#0" expanded="false" />
             <element signature="method#moveUp#0;class#Game#0" expanded="false" />
             <element signature="method#moveDown#0;class#Game#0" expanded="false" />
             <element signature="method#moveLeft#0;class#Game#0" expanded="false" />
@@ -563,17 +442,12 @@
             <element signature="method#getExit#0;class#RandomMaze#0" expanded="false" />
             <element signature="method#getPOSITION#0;class#RandomMaze#0" expanded="false" />
             <element signature="method#setExit#0;class#RandomMaze#0" expanded="false" />
-            <element signature="method#setEntrance#0;class#RandomMaze#0" expanded="false" />
             <element signature="method#render#0;class#RandomMaze#0" expanded="false" />
             <element signature="method#randomGenerate#0;class#RandomMaze#0" expanded="false" />
             <element signature="method#goLeft#0;class#RandomMaze#0" expanded="false" />
             <element signature="method#goRight#0;class#RandomMaze#0" expanded="false" />
             <element signature="method#goDown#0;class#RandomMaze#0" expanded="false" />
             <element signature="method#goUp#0;class#RandomMaze#0" expanded="false" />
-            <marker date="1543387792977" expanded="false" signature="1626:2018" ph="{...}" />
-            <marker date="1543387792977" expanded="false" signature="2047:2430" ph="{...}" />
-            <marker date="1543387792977" expanded="false" signature="2459:2842" ph="{...}" />
-            <marker date="1543387792977" expanded="false" signature="2872:3263" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -601,6 +475,9 @@
           <folding>
             <element signature="method#Game#0;class#Game#0" expanded="false" />
             <element signature="method#play#0;class#Game#0" expanded="false" />
+            <element signature="method#findPath#0;class#Game#0" expanded="false" />
+            <element signature="method#DFS#0;class#Game#0" expanded="false" />
+            <element signature="method#moveBack#0;class#Game#0" expanded="false" />
             <element signature="method#moveUp#0;class#Game#0" expanded="false" />
             <element signature="method#moveDown#0;class#Game#0" expanded="false" />
             <element signature="method#moveLeft#0;class#Game#0" expanded="false" />
@@ -629,73 +506,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/lib/StdDraw.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="10538">
-          <caret line="479" column="19" lean-forward="false" selection-start-line="479" selection-start-column="19" selection-end-line="479" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lib/TileEngine/TETile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-67">
-          <caret line="23" column="13" lean-forward="false" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lib/TileEngine/TERenderer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-529">
-          <caret line="27" column="46" lean-forward="true" selection-start-line="27" selection-start-column="46" selection-end-line="27" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Core/RandomMaze.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="140" column="31" lean-forward="false" selection-start-line="140" selection-start-column="31" selection-end-line="140" selection-end-column="31" />
-          <folding>
-            <element signature="method#RandomMaze#0;class#RandomMaze#0" expanded="false" />
-            <element signature="method#getTile#0;class#RandomMaze#0" expanded="false" />
-            <element signature="method#getMap#0;class#RandomMaze#0" expanded="false" />
-            <element signature="method#getExit#0;class#RandomMaze#0" expanded="false" />
-            <element signature="method#getPOSITION#0;class#RandomMaze#0" expanded="false" />
-            <element signature="method#setExit#0;class#RandomMaze#0" expanded="false" />
-            <element signature="method#setEntrance#0;class#RandomMaze#0" expanded="false" />
-            <element signature="method#render#0;class#RandomMaze#0" expanded="false" />
-            <element signature="method#randomGenerate#0;class#RandomMaze#0" expanded="false" />
-            <element signature="method#goLeft#0;class#RandomMaze#0" expanded="false" />
-            <element signature="method#goRight#0;class#RandomMaze#0" expanded="false" />
-            <element signature="method#goDown#0;class#RandomMaze#0" expanded="false" />
-            <element signature="method#goUp#0;class#RandomMaze#0" expanded="false" />
-            <marker date="1543387792977" expanded="false" signature="1626:2018" ph="{...}" />
-            <marker date="1543387792977" expanded="false" signature="2047:2430" ph="{...}" />
-            <marker date="1543387792977" expanded="false" signature="2459:2842" ph="{...}" />
-            <marker date="1543387792977" expanded="false" signature="2872:3263" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Core/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="39" lean-forward="false" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
-          <folding>
-            <element signature="method#loadGame#0;class#Main#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Core/Game.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="568">
-          <caret line="120" column="24" lean-forward="true" selection-start-line="120" selection-start-column="24" selection-end-line="120" selection-end-column="24" />
+        <state relative-caret-position="522">
+          <caret line="85" column="52" lean-forward="false" selection-start-line="85" selection-start-column="52" selection-end-line="85" selection-end-column="52" />
           <folding>
             <element signature="method#Game#0;class#Game#0" expanded="false" />
             <element signature="method#play#0;class#Game#0" expanded="false" />
+            <element signature="method#findPath#0;class#Game#0" expanded="false" />
+            <element signature="method#DFS#0;class#Game#0" expanded="false" />
+            <element signature="method#moveBack#0;class#Game#0" expanded="false" />
             <element signature="method#moveUp#0;class#Game#0" expanded="false" />
             <element signature="method#moveDown#0;class#Game#0" expanded="false" />
             <element signature="method#moveLeft#0;class#Game#0" expanded="false" />
@@ -708,10 +528,86 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/src.zip!/java/util/ArrayList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="495" column="0" lean-forward="false" selection-start-line="495" selection-start-column="0" selection-end-line="495" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Core/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="13" column="35" lean-forward="false" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
+          <folding>
+            <element signature="method#main#0;class#Main#0" expanded="false" />
+            <element signature="method#showMenu#0;class#Main#0" expanded="false" />
+            <element signature="method#promptSeed#0;class#Main#0" expanded="false" />
+            <element signature="method#startNewGame#0;class#Main#0" expanded="false" />
+            <element signature="method#loadGame#0;class#Main#0" expanded="false" />
+            <element signature="method#clearLoad#0;class#Main#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Core/Load.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lib/TileEngine/TERenderer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-907">
+          <caret line="27" column="46" lean-forward="true" selection-start-line="27" selection-start-column="46" selection-end-line="27" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/lib/TileEngine/Tileset.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="23" column="21" lean-forward="true" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
+        <state relative-caret-position="265">
+          <caret line="24" column="79" lean-forward="false" selection-start-line="24" selection-start-column="79" selection-end-line="24" selection-end-column="79" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lib/StdDraw.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="479" column="19" lean-forward="false" selection-start-line="479" selection-start-column="19" selection-end-line="479" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Core/RandomMaze.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="343">
+          <caret line="80" column="19" lean-forward="false" selection-start-line="80" selection-start-column="19" selection-end-line="80" selection-end-column="19" />
+          <folding>
+            <element signature="method#RandomMaze#0;class#RandomMaze#0" expanded="false" />
+            <element signature="method#getTile#0;class#RandomMaze#0" expanded="false" />
+            <element signature="method#getMap#0;class#RandomMaze#0" expanded="false" />
+            <element signature="method#getExit#0;class#RandomMaze#0" expanded="false" />
+            <element signature="method#getPOSITION#0;class#RandomMaze#0" expanded="false" />
+            <element signature="method#setExit#0;class#RandomMaze#0" expanded="false" />
+            <element signature="method#render#0;class#RandomMaze#0" expanded="false" />
+            <element signature="method#randomGenerate#0;class#RandomMaze#0" expanded="false" />
+            <element signature="method#goLeft#0;class#RandomMaze#0" expanded="false" />
+            <element signature="method#goRight#0;class#RandomMaze#0" expanded="false" />
+            <element signature="method#goDown#0;class#RandomMaze#0" expanded="false" />
+            <element signature="method#goUp#0;class#RandomMaze#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lib/TileEngine/TETile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-67">
+          <caret line="23" column="13" lean-forward="false" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
           <folding />
         </state>
       </provider>
