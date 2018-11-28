@@ -5,8 +5,8 @@ import lib.StdDraw;
 import java.awt.*;
 
 public class Main {
-    private static final int width = 71;
-    private static final int height = 41;
+    private static final int width = 30;
+    private static final int height = 15;
     public static void main(String[] args) {
         showMenu();
     }
@@ -22,8 +22,8 @@ public class Main {
         StdDraw.text( width / 2,4 * height / 5, "Random Maze");
         StdDraw.setFont(new Font("Arial", Font.ITALIC, 30));
         StdDraw.text( width / 2,6 * height / 14, "New Game (N)");
-        StdDraw.text( width / 2, 6 * height / 14 - 4, "Load Game(L)");
-        StdDraw.text( width / 2, 6 * height / 14 - 8, "Quit (Q)");
+        StdDraw.text( width / 2, 6 * height / 14 - 4 * height / 30, "Load Game(L)");
+        StdDraw.text( width / 2, 6 * height / 14 - 8 * height / 30, "Quit (Q)");
         StdDraw.show();
         char t = '0';
         while(t != 'n' && t != 'N' && t != 'l' && t != 'T' && t != 'q' && t != 'Q') {
@@ -55,9 +55,9 @@ public class Main {
                 char key = StdDraw.nextKeyTyped();
                 if (key - '0' >= 0 && key - '0' <= 9) {
                     seed.append(key);
-                } else if (seed.length() > 0 && key == 'S' || key == 's' ) {
+                } else if (seed.length() > 0 && (key == 'S' || key == 's') ) {
                     break;
-                } else if (seed.length() > 0 && key == 'd' || key == 'D') {
+                } else if (seed.length() > 0 && (key == 'd' || key == 'D') ) {
                     seed.deleteCharAt(seed.length() - 1);
                 }
             }
