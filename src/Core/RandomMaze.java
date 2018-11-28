@@ -141,7 +141,6 @@ public class RandomMaze {
     private void setEntrance() {
         int pos = RandomUtils.uniform(this.rand, walkables.size());
         POSITION = walkables.remove(pos);
-        map[POSITION[0]][POSITION[1]] = 3;
     }
 
     // Construct the 2D TETile matrix according to this.map
@@ -154,8 +153,6 @@ public class RandomMaze {
                     graphicMap[i][k] = Tileset.PATH;
                 } else if (map[i][k] == 2) {
                     graphicMap[i][k] = Tileset.EXIT;
-                } else {
-                    graphicMap[i][k] = Tileset.POS;
                 }
             }
         }

@@ -5,8 +5,8 @@ import lib.StdDraw;
 import java.awt.*;
 
 public class Main {
-    private static final int width = 30;
-    private static final int height = 14;
+    private static final int width = 90;
+    private static final int height = 40;
     public static void main(String[] args) {
         showMenu();
     }
