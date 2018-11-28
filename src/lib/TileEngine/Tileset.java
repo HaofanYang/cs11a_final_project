@@ -33,7 +33,9 @@ public class Tileset {
     public static final TETile SAND = new TETile('▒', Color.yellow, Color.black, "sand");
     public static final TETile MOUNTAIN = new TETile('▲', Color.gray, Color.black, "mountain");
     public static final TETile TREE = new TETile('♠', Color.green, Color.black, "tree");
-    public static final TETile PATH = new TETile(' ', new Color(0, 0, 0), Color.WHITE, "path");
+    public static final TETile PATH = new TETile(' ', Color.white, Color.GRAY, "path");
+    public static final TETile POS = new TETile(' ', Color.RED, Color.RED, "exit");
+    public static final TETile EXIT = new TETile(' ', Color.YELLOW, Color.YELLOW, "current position");
 
 }
 
