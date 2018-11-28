@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5d2a308f-1577-45f6-928d-d06f15a6e506" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/out/production/final_proj/Core/Game.class" afterPath="$PROJECT_DIR$/out/production/final_proj/Core/Game.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/final_proj/Core/RandomMaze.class" afterPath="$PROJECT_DIR$/out/production/final_proj/Core/RandomMaze.class" />
       <change beforePath="$PROJECT_DIR$/src/Core/Game.java" afterPath="$PROJECT_DIR$/src/Core/Game.java" />
-      <change beforePath="$PROJECT_DIR$/src/Core/RandomMaze.java" afterPath="$PROJECT_DIR$/src/Core/RandomMaze.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,11 +27,11 @@
       <file leaf-file-name="Game.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Core/Game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="528">
-              <caret line="59" column="5" lean-forward="true" selection-start-line="59" selection-start-column="5" selection-end-line="59" selection-end-column="5" />
+            <state relative-caret-position="347">
+              <caret line="66" column="40" lean-forward="false" selection-start-line="66" selection-start-column="40" selection-end-line="66" selection-end-column="40" />
               <folding>
-                <element signature="method#showMenu#0;class#Game#0" expanded="false" />
-                <element signature="method#startNewGame#0;class#Game#0" expanded="false" />
+                <element signature="method#Game#0;class#Game#0" expanded="false" />
+                <element signature="method#main#0;class#Game#0" expanded="false" />
                 <element signature="method#loadGame#0;class#Game#0" expanded="false" />
               </folding>
             </state>
@@ -369,8 +365,14 @@
           <properties />
           <option name="timeStamp" value="2" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Core/Game.java</url>
+          <line>31</line>
+          <properties />
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="5" />
+      <option name="time" value="6" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -404,8 +406,8 @@
         <state relative-caret-position="264">
           <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding>
-            <element signature="method#showMenu#0;class#Game#0" expanded="false" />
-            <element signature="method#startNewGame#0;class#Game#0" expanded="false" />
+            <element signature="method#Game#0;class#Game#0" expanded="false" />
+            <element signature="method#main#0;class#Game#0" expanded="false" />
             <element signature="method#loadGame#0;class#Game#0" expanded="false" />
           </folding>
         </state>
@@ -469,11 +471,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Core/Game.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="59" column="5" lean-forward="true" selection-start-line="59" selection-start-column="5" selection-end-line="59" selection-end-column="5" />
+        <state relative-caret-position="347">
+          <caret line="66" column="40" lean-forward="false" selection-start-line="66" selection-start-column="40" selection-end-line="66" selection-end-column="40" />
           <folding>
-            <element signature="method#showMenu#0;class#Game#0" expanded="false" />
-            <element signature="method#startNewGame#0;class#Game#0" expanded="false" />
+            <element signature="method#Game#0;class#Game#0" expanded="false" />
+            <element signature="method#main#0;class#Game#0" expanded="false" />
             <element signature="method#loadGame#0;class#Game#0" expanded="false" />
           </folding>
         </state>
