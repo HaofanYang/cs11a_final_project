@@ -65,15 +65,36 @@ public class Main {
         return Long.parseLong(seed.toString());
     }
 
+
+
+
+
+
     private static void startNewGame() {
         long seed = promptSeed();
         Random rand = new Random(seed);
         Load newLoad = new Load(rand, width, height);
         while (!newLoad.hasFinished()) {
             newLoad.play();
+            // Serialize newLoad
         }
         victory();
+
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     //TODO
     private static void loadGame() {

@@ -7,11 +7,11 @@ import java.util.Random;
 import java.util.List;
 import java.util.ArrayList;
 
-public class RandomMaze {
+public class RandomMaze implements java.io.Serializable {
     private final int height;
     private final int width;
     private TETile[][] graphicMap; // Graphic representation of a map
-    int[][] map; // int representation of a map: 0 for wall, 1 for path, 2 for exit and 3 for current position
+    private int[][] map; // int representation of a map: 0 for wall, 1 for path
     Random rand;
     List<int[]> walkables = new ArrayList<>();
     int[] EXIT; // Randomly selected
@@ -66,7 +66,6 @@ public class RandomMaze {
         int pos = RandomUtils.uniform(this.rand, walkables.size());
         EXIT = walkables.remove(pos);
         map[EXIT[0]][EXIT[1]] = 2;
-
     }
 
     // Randomly select a postion from this.walkable as the initial position
@@ -76,6 +75,7 @@ public class RandomMaze {
         int[] temp = walkables.get(pos);
         int xDis = Math.abs(temp[0] - EXIT[0]);
         int yDis = Math.abs(temp[1] - EXIT[1]);
+        //TODO 加一个RECURSION上限
         if (xDis < width / 4 || yDis < height / 4) {
             setEntrance();
             return;

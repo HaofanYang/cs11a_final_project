@@ -2,7 +2,7 @@ package Core;
 
 import java.util.Random;
 
-public class Load {
+public class Load implements java.io.Serializable {
     private Game currentGame;
     private Random rand;
     private int width;
@@ -21,6 +21,22 @@ public class Load {
     public boolean hasFinished() {
         return round > totRound;
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     public void play() {
         currentGame = new Game(this.round, width, height, this.rand);

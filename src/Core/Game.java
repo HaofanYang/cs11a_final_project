@@ -7,14 +7,14 @@ import lib.TileEngine.Tileset;
 import java.util.Random;
 import java.awt.*;
 
-public class Game {
+public class Game implements java.io.Serializable{
     private static final TETile playerBlock = Tileset.POS; // Tile to represent current position
     private static final TETile trace = Tileset.FLOOR; // Tile to represent the trace of automatic path finder
     private static final TETile path = Tileset.PATH; // Tile to recover the previous position (i.e. blank)
     private static final int edgeHeight = 5;
     private static final int edgeWidth = 5;
     private int width;
-    private  int height;
+    private int height;
     private boolean finished;
     private Random rand;
     private RandomMaze MAZE;
@@ -73,6 +73,8 @@ public class Game {
                     moves++;
                 } else if (key == 'f' || key == 'F') {
                     findPath(new int[width][height]);
+                } else if (key == 's' || key == 'S') {
+                    save();
                 }
                 StdDraw.setPenColor(Color.BLACK);
                 StdDraw.filledRectangle(8 * width / 10, 0.5 * edgeHeight, 4, 1);
@@ -138,6 +140,36 @@ public class Game {
     // A helper function for findPath.
     // 1. mark the current position blank
     // 2. reset the position to x and y
+
+
+
+
+
+
+
+
+
+
+    private void save() {
+        
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     private void moveBack(int x, int y) {
         if (x == position[0] && y == position[1]) {
             return;
