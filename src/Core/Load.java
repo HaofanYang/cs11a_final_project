@@ -16,7 +16,6 @@ public class Load {
         height = h;
         round = 1;
         this.rand = rand;
-        currentGame = new Game(this.round, width, height, this.rand);
     }
 
     public boolean hasFinished() {
@@ -24,8 +23,8 @@ public class Load {
     }
 
     public void play() {
-        currentGame.play();
         currentGame = new Game(this.round, width, height, this.rand);
+        currentGame.play();
         round += 1;
         width *= sizeIncreaseRatio;
         height *= sizeIncreaseRatio;

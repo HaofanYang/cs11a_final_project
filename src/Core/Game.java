@@ -203,7 +203,6 @@ public class Game {
         int x = position[0];
         int y = position[1];
         if (y == 0 || map[x][y - 1] == 0) {
-            System.out.println("blocked");
             return false;
         }
         return true;
@@ -213,7 +212,6 @@ public class Game {
         int x = position[0];
         int y = position[1];
         if (x == 0 || map[x - 1][y] == 0) {
-            System.out.println("blocked");
             return false;
         }
         return true;
@@ -223,7 +221,6 @@ public class Game {
         int x = position[0];
         int y = position[1];
         if (x == width - 1 || map[x + 1][y] == 0) {
-            System.out.println("blocked");
             return false;
         }
         return true;
