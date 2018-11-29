@@ -3,6 +3,7 @@ package Core;
 import java.util.Random;
 
 public class Load implements java.io.Serializable {
+    /***
     private Game currentGame;
     private Random rand;
     private int width;
@@ -40,9 +41,13 @@ public class Load implements java.io.Serializable {
 
     public void play() {
         currentGame = new Game(this.round, width, height, this.rand);
-        currentGame.play();
-        round += 1;
-        width *= sizeIncreaseRatio;
-        height *= sizeIncreaseRatio;
+        while (!currentGame.terminated()) {
+            currentGame.play();
+            round += 1;
+            width *= sizeIncreaseRatio;
+            height *= sizeIncreaseRatio;
+        }
+        // serialize this
     }
+     **/
 }

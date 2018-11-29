@@ -11,11 +11,14 @@ public class Game implements java.io.Serializable{
     private static final TETile playerBlock = Tileset.POS; // Tile to represent current position
     private static final TETile trace = Tileset.FLOOR; // Tile to represent the trace of automatic path finder
     private static final TETile path = Tileset.PATH; // Tile to recover the previous position (i.e. blank)
+    private static final int totRound = 7;
     private static final int edgeHeight = 5;
     private static final int edgeWidth = 5;
+    private static final int Initial_width = 40;
+    private static final int Initial_height = 18;
     private int width;
     private int height;
-    private boolean finished;
+    private boolean finished; // Has reached reach the exit
     private Random rand;
     private RandomMaze MAZE;
     private int[] position;
@@ -23,13 +26,14 @@ public class Game implements java.io.Serializable{
     private int[][] map;
     private int round;
     private int moves;
+    private transient boolean quit = false;
 
-    public Game(int round, int w, int h, Random rand) {
+    public Game(int round, Random rand) {
         this.round = round;
         this.moves = 0;
         this.rand = rand;
-        this.width = w;
-        this.height = h;
+        this.width = (int)(Initial_width * Math.pow(1.12, round - 1));
+        this.height = (int)(Initial_height * Math.pow(1.12, round));
         this.finished = false;
         this.MAZE = new RandomMaze(width, height, this.rand);
         this.position = this.MAZE.getPOSITION();
@@ -53,7 +57,7 @@ public class Game implements java.io.Serializable{
         StdDraw.text(edgeWidth + width / 3,  height + 1.2 * edgeHeight, "Quit and Save: Q");
         StdDraw.setFont(new Font("Arial", Font.BOLD, 25));
         StdDraw.text(3 * width / 10, 0.5 * edgeHeight , "Round: " + round + "/7");
-        StdDraw.text(8 * width / 10, 0.5 * edgeHeight , "Moves: 0");
+        StdDraw.text(8 * width / 10, 0.5 * edgeHeight , "Moves: " + moves);
         StdDraw.show();
         while (!finished) {
             finished = position[0] == exit[0] && position[1] == exit[1];
@@ -73,8 +77,9 @@ public class Game implements java.io.Serializable{
                     moves++;
                 } else if (key == 'f' || key == 'F') {
                     findPath(new int[width][height]);
-                } else if (key == 's' || key == 'S') {
+                } else if (key == 'q' || key == 'Q') {
                     save();
+                    return;
                 }
                 StdDraw.setPenColor(Color.BLACK);
                 StdDraw.filledRectangle(8 * width / 10, 0.5 * edgeHeight, 4, 1);
@@ -85,6 +90,23 @@ public class Game implements java.io.Serializable{
         }
     }
 
+    public boolean terminated() {
+        return quit;
+    }
+
+    public int getRound() {
+        return round;
+    }
+
+    public Random getRand() {
+        return rand;
+    }
+
+
+
+
+
+    /*** Private methods below **/
     private void findPath(int[][] visited) {
         DFS(position[0], position[1], visited);
     }
@@ -141,34 +163,9 @@ public class Game implements java.io.Serializable{
     // 1. mark the current position blank
     // 2. reset the position to x and y
 
-
-
-
-
-
-
-
-
-
     private void save() {
-        
+        quit = true;
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     private void moveBack(int x, int y) {
         if (x == position[0] && y == position[1]) {

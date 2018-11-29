@@ -1,17 +1,19 @@
 package Core;
 
 import lib.StdDraw;
+
+import java.io.*;
 import java.util.Random;
 import java.awt.*;
 
-public class Main {
-    private static final int width = 40;
-    private static final int height = 18;
-    public static void main(String[] args) {
+public class Main{
+    private static int width = 40;
+    private static int height = 18;
+    public static void main(String[] args) throws Exception{
         showMenu();
     }
 
-    private static void showMenu() {
+    private static void showMenu() throws Exception {
         StdDraw.setCanvasSize(1024, 512);
         StdDraw.enableDoubleBuffering();
         StdDraw.clear(Color.BLACK);
@@ -33,7 +35,7 @@ public class Main {
             if (t == 'N' || t == 'n') {
                 startNewGame();
             } else if (t == 'L' || t == 'l') {
-                startNewGame();
+                loadGame();
             } else if (t == 'Q' || t == 'q') {
                 System.exit(0);
             }
@@ -70,38 +72,69 @@ public class Main {
 
 
 
-    private static void startNewGame() {
+    private static void startNewGame() throws Exception{
+        int round = 1;
         long seed = promptSeed();
         Random rand = new Random(seed);
-        Load newLoad = new Load(rand, width, height);
-        while (!newLoad.hasFinished()) {
-            newLoad.play();
-            // Serialize newLoad
+
+        while(round < 7){
+            Game currentGame = new Game(round, rand);
+            currentGame.play();
+            if(currentGame.terminated()){
+                File f = new File("load.txt");
+                FileOutputStream fos = new FileOutputStream(f);
+                ObjectOutputStream oos = new ObjectOutputStream(fos);
+                oos.writeObject(currentGame);
+                showMenu();
+                return;
+            }
+            round++;
         }
+
         victory();
 
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     //TODO
-    private static void loadGame() {
-        return;
+    private static void loadGame() throws Exception {
+        String source = "load.txt";
+
+        File dir = new File(".");
+
+        source = dir.getCanonicalPath() + File.separator + source;
+
+        File fin = new File(source);
+
+        FileInputStream fis = new FileInputStream(fin);
+        ObjectInputStream ois = new ObjectInputStream(fis);
+        Game result = (Game)ois.readObject();
+
+        startNewGame(result);
+
     }
 
-    private static void victory() {
+    private static void startNewGame(Game result) throws Exception {
+        int round = result.getRound();
+        Random rand = result.getRand();
+        Game cur = result;
+        while(round < 7) {
+            cur.play();
+            if(cur.terminated()){
+                File f = new File("load.txt");
+                FileOutputStream fos = new FileOutputStream(f);
+                ObjectOutputStream oos = new ObjectOutputStream(fos);
+                oos.writeObject(cur);
+                showMenu();
+                return;
+            }
+            round++;
+            cur = new Game(round, rand);
+        }
+
+        victory();
+    }
+
+    private static void victory() throws Exception {
         StdDraw.clear(Color.BLACK);
         StdDraw.enableDoubleBuffering();
         StdDraw.setYscale(0, height);
@@ -109,14 +142,9 @@ public class Main {
         StdDraw.setFont(new Font("Arial", Font.BOLD, 60));
         StdDraw.setPenColor(Color.WHITE);
         StdDraw.text( width / 2, height / 2, "Victory!!!");
-        clearLoad();
         StdDraw.show();
         StdDraw.pause(1000);
         showMenu();
     }
 
-    // TODO
-    private static void clearLoad() {
-
-    }
 }
