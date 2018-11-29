@@ -20,7 +20,7 @@ public class Tileset {
     public static final TETile PLAYER = new TETile('@', Color.white, Color.black, "player");
     public static final TETile WALL = new TETile(' ', Color.black, Color.black,
             "wall");
-    public static final TETile FLOOR = new TETile('❀', Color.RED, Color.GRAY,
+    public static final TETile FLOOR = new TETile('•', Color.RED, Color.GRAY,
             "floor");
     public static final TETile NOTHING = new TETile(' ', Color.black, Color.black, "nothing");
     public static final TETile GRASS = new TETile('"', Color.green, Color.black, "grass");

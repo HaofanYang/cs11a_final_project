@@ -44,8 +44,6 @@ public class Game {
         rend.renderFrame(world);
         playerBlock.draw(position[0] + edgeWidth, position[1] + edgeHeight);
         StdDraw.setPenColor(Color.WHITE);
-        StdDraw.setFont(new Font("Arial", Font.BOLD, 25));
-        StdDraw.text(width / 10, 0.5 * edgeHeight , "Round: " + round + "/7");
         StdDraw.setFont(new Font("Arial", Font.BOLD, 15));
         StdDraw.text(edgeWidth + width / 12,  height + 1.7 * edgeHeight, "MoveUp: W");
         StdDraw.text(edgeWidth + 4 * width / 12,  height + 1.7 * edgeHeight, "MoveDown: S");
@@ -53,6 +51,9 @@ public class Game {
         StdDraw.text(edgeWidth + 10 * width / 12,  height + 1.7 * edgeHeight, "MoveRight: D");
         StdDraw.text(edgeWidth + 2 * width / 3,  height +  1.2 * edgeHeight, "Cheat: F");
         StdDraw.text(edgeWidth + width / 3,  height + 1.2 * edgeHeight, "Quit and Save: Q");
+        StdDraw.setFont(new Font("Arial", Font.BOLD, 25));
+        StdDraw.text(3 * width / 10, 0.5 * edgeHeight , "Round: " + round + "/7");
+        StdDraw.text(8 * width / 10, 0.5 * edgeHeight , "Moves: 0");
         StdDraw.show();
         while (!finished) {
             finished = position[0] == exit[0] && position[1] == exit[1];
@@ -73,8 +74,11 @@ public class Game {
                 } else if (key == 'f' || key == 'F') {
                     findPath(new int[width][height]);
                 }
-                //StdDraw.text(2 * width / 3, height + edgeHeight, "Moves: " + moves);
-                //StdDraw.show();
+                StdDraw.setPenColor(Color.BLACK);
+                StdDraw.filledRectangle(8 * width / 10, 0.5 * edgeHeight, 4, 1);
+                StdDraw.setPenColor(Color.WHITE);
+                StdDraw.text(8 * width / 10, 0.5 * edgeHeight , "Moves: " + moves);
+                StdDraw.show();
             }
         }
     }

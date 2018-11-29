@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5d2a308f-1577-45f6-928d-d06f15a6e506" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/src/Core/Game.java" afterPath="$PROJECT_DIR$/src/Core/Game.java" />
-      <change beforePath="$PROJECT_DIR$/src/Core/Load.java" afterPath="$PROJECT_DIR$/src/Core/Load.java" />
+      <change beforePath="$PROJECT_DIR$/src/lib/TileEngine/Tileset.java" afterPath="$PROJECT_DIR$/src/lib/TileEngine/Tileset.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,24 +15,27 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Load.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Load.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Core/Load.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="356">
+            <state relative-caret-position="308">
               <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-              <folding />
+              <folding>
+                <element signature="method#Load#0;class#Load#0" expanded="false" />
+                <element signature="method#hasFinished#0;class#Load#0" expanded="false" />
+                <element signature="method#play#0;class#Load#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Game.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Game.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Core/Game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="491">
-              <caret line="219" column="35" lean-forward="false" selection-start-line="219" selection-start-column="35" selection-end-line="219" selection-end-column="35" />
+            <state relative-caret-position="-283">
+              <caret line="11" column="32" lean-forward="true" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="37" />
               <folding>
                 <element signature="method#Game#0;class#Game#0" expanded="false" />
-                <element signature="method#play#0;class#Game#0" expanded="false" />
                 <element signature="method#findPath#0;class#Game#0" expanded="false" />
                 <element signature="method#DFS#0;class#Game#0" expanded="false" />
                 <element signature="method#moveBack#0;class#Game#0" expanded="false" />
@@ -62,6 +64,26 @@
                 <element signature="method#loadGame#0;class#Main#0" expanded="false" />
                 <element signature="method#clearLoad#0;class#Main#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Tileset.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/lib/TileEngine/Tileset.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="22" column="52" lean-forward="false" selection-start-line="22" selection-start-column="52" selection-end-line="22" selection-end-column="52" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TETile.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/lib/TileEngine/TETile.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="22">
+              <caret line="23" column="13" lean-forward="false" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -103,11 +125,11 @@
       <list>
         <option value="$PROJECT_DIR$/src/Game.java" />
         <option value="$PROJECT_DIR$/src/lib/StdDraw.java" />
-        <option value="$PROJECT_DIR$/src/lib/TileEngine/Tileset.java" />
         <option value="$PROJECT_DIR$/src/Core/Main.java" />
         <option value="$PROJECT_DIR$/src/Core/RandomMaze.java" />
-        <option value="$PROJECT_DIR$/src/Core/Game.java" />
         <option value="$PROJECT_DIR$/src/Core/Load.java" />
+        <option value="$PROJECT_DIR$/src/Core/Game.java" />
+        <option value="$PROJECT_DIR$/src/lib/TileEngine/Tileset.java" />
       </list>
     </option>
   </component>
@@ -349,7 +371,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31479642" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31479642" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Style Checker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -382,8 +404,14 @@
           <properties />
           <option name="timeStamp" value="6" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Core/Game.java</url>
+          <line>224</line>
+          <properties />
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="13" />
+      <option name="time" value="15" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -463,7 +491,6 @@
           <caret line="84" column="0" lean-forward="true" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
           <folding>
             <element signature="method#Game#0;class#Game#0" expanded="false" />
-            <element signature="method#play#0;class#Game#0" expanded="false" />
             <element signature="method#findPath#0;class#Game#0" expanded="false" />
             <element signature="method#DFS#0;class#Game#0" expanded="false" />
             <element signature="method#moveBack#0;class#Game#0" expanded="false" />
@@ -522,7 +549,6 @@
           <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding>
             <element signature="method#Game#0;class#Game#0" expanded="false" />
-            <element signature="method#play#0;class#Game#0" expanded="false" />
             <element signature="method#findPath#0;class#Game#0" expanded="false" />
             <element signature="method#DFS#0;class#Game#0" expanded="false" />
             <element signature="method#moveBack#0;class#Game#0" expanded="false" />
@@ -570,14 +596,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/lib/TileEngine/Tileset.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="24" column="79" lean-forward="false" selection-start-line="24" selection-start-column="79" selection-end-line="24" selection-end-column="79" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/lib/StdDraw.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="585">
@@ -607,36 +625,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/lib/TileEngine/TETile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-67">
-          <caret line="23" column="13" lean-forward="false" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Core/Game.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="491">
-          <caret line="219" column="35" lean-forward="false" selection-start-line="219" selection-start-column="35" selection-end-line="219" selection-end-column="35" />
-          <folding>
-            <element signature="method#Game#0;class#Game#0" expanded="false" />
-            <element signature="method#play#0;class#Game#0" expanded="false" />
-            <element signature="method#findPath#0;class#Game#0" expanded="false" />
-            <element signature="method#DFS#0;class#Game#0" expanded="false" />
-            <element signature="method#moveBack#0;class#Game#0" expanded="false" />
-            <element signature="method#moveUp#0;class#Game#0" expanded="false" />
-            <element signature="method#moveDown#0;class#Game#0" expanded="false" />
-            <element signature="method#moveLeft#0;class#Game#0" expanded="false" />
-            <element signature="method#moveRight#0;class#Game#0" expanded="false" />
-            <element signature="method#canMoveUp#0;class#Game#0" expanded="false" />
-            <element signature="method#canMoveDown#0;class#Game#0" expanded="false" />
-            <element signature="method#canMoveLeft#0;class#Game#0" expanded="false" />
-            <element signature="method#canMoveRight#0;class#Game#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Core/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
@@ -651,11 +639,52 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/lib/TileEngine/TETile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="23" column="13" lean-forward="false" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Core/Load.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
+        <state relative-caret-position="308">
           <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding>
+            <element signature="method#Load#0;class#Load#0" expanded="false" />
+            <element signature="method#hasFinished#0;class#Load#0" expanded="false" />
+            <element signature="method#play#0;class#Load#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lib/TileEngine/Tileset.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="22" column="52" lean-forward="false" selection-start-line="22" selection-start-column="52" selection-end-line="22" selection-end-column="52" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Core/Game.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-283">
+          <caret line="11" column="32" lean-forward="true" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="37" />
+          <folding>
+            <element signature="method#Game#0;class#Game#0" expanded="false" />
+            <element signature="method#findPath#0;class#Game#0" expanded="false" />
+            <element signature="method#DFS#0;class#Game#0" expanded="false" />
+            <element signature="method#moveBack#0;class#Game#0" expanded="false" />
+            <element signature="method#moveUp#0;class#Game#0" expanded="false" />
+            <element signature="method#moveDown#0;class#Game#0" expanded="false" />
+            <element signature="method#moveLeft#0;class#Game#0" expanded="false" />
+            <element signature="method#moveRight#0;class#Game#0" expanded="false" />
+            <element signature="method#canMoveUp#0;class#Game#0" expanded="false" />
+            <element signature="method#canMoveDown#0;class#Game#0" expanded="false" />
+            <element signature="method#canMoveLeft#0;class#Game#0" expanded="false" />
+            <element signature="method#canMoveRight#0;class#Game#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
